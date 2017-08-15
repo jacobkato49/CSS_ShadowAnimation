@@ -1,0 +1,21 @@
+body{
+  background:lightblue;
+}
+
+.container{
+  /*center*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+
+.circle{
+  width: 15px;
+  height: 15px;
+  background:#fff;
+
+  /*making it round*/
+  border-radius: 50%;
+  position: absolute;
+}
