@@ -1,5 +1,6 @@
 body{
-  background:#00008B;
+  background-image: url("images/Moon.jpg");
+  background-size:cover;
 }
 
 .container{
@@ -16,7 +17,6 @@ body{
   left: 50%;
   top: 50%;
   transform:translate(-50%,-50%);
-  background: red;
 }
 
 .circle-container:after{
@@ -47,13 +47,21 @@ body{
 }
 
 /*second circle*/
-.circle:nth-child(2){
+.circle-container:nth-child(2) .circle{
   /* - makes it start without resetting*/
   animation-delay:-0.3s;
 }
 
-.circle:nth-child(3){
+.circle-container:nth-child(3) .circle{
   animation-delay:-0.6s;
+}
+
+.circle-container:nth-child(2):after {
+  animation-delay: -0.3s;
+}
+
+.circle-container:nth-child(3):after {
+  animation-delay: -0.6s;
 }
 
 /*create animation*/
